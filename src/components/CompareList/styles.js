@@ -11,11 +11,51 @@ export const Container = styled.div`
 export const Repository = styled.div`
   width: 250px;
   background: #fff;
-  border-radius: 3px;
+  border-radius: 10px;
   margin: 0 15px;
 
   display: flex;
   flex-direction: column;
+
+  .button-container {
+
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+
+      button {
+      color: #fff
+      border-radius: 5px;
+      border: none;
+      padding: 5px;
+      margin: 5px 5px 0px 0px;
+      width: 30px;
+      display: flex;
+      justify-content: center;
+
+        i{
+          pointer-events: none;
+        }
+
+      }
+
+      button.refresh-button {
+          background: #80d880;
+
+          &:hover{
+          background: #6ac76a;
+          }
+        }
+
+      button.close-button{
+        background: #fd7575;
+
+        &:hover{
+          background: #f55555;
+        }
+      }
+
+  }
 
   header {
     padding: 30px;
